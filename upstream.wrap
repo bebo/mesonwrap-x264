@@ -1,0 +1,6 @@
+[wrap-file]
+directory = x264
+source_url = https://s3-us-west-1.amazonaws.com/bebo-app/repo/x264/x264-r2901-7d0ff22.zip
+source_filename = x264-r2901-7d0ff22.zip
+source_hash = 286278bd8b6542ed6da9c00b23dbef69820903a3110d4aa30d25c09d35ee9a38
+
