@@ -1,9 +1,7 @@
 
-project('jpeg', 'c')
+project('x264', 'c')
 
 cc = meson.get_compiler('c')
-install_data(['bin/jpeg62.dll', 'bin/turbojpeg.dll'], install_dir: '/bin')
-jpeg_dep = declare_dependency(
-  # dependencies : [cc.find_library('jpeg', dirs : meson.current_source_dir()), cc.find_library('legacy_stdio_definitions')],
-  dependencies : [cc.find_library('jpeg', dirs : meson.current_source_dir())],
+x264_dep = declare_dependency(
+  dependencies : [cc.find_library('x264', dirs : meson.current_source_dir() + '/lib')],
   include_directories : include_directories('include'))
